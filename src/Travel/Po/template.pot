@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: wwwroot/backend.html:31
+msgid "Activities"
+msgstr ""
+
+#: wwwroot/Views/Backend/Sights/list.html:22
+msgid "Add New Sight"
+msgstr ""
+
+#: wwwroot/backend.html:28
+msgid "Dashboard"
+msgstr ""
+
+#: wwwroot/backend.html:30
+msgid "Events"
+msgstr ""
+
+#: wwwroot/backend.html:32
+msgid "Hotels"
+msgstr ""
+
+#: wwwroot/Views/Backend/Sights/list.html:7
+msgid "Name"
+msgstr ""
+
+#: wwwroot/backend.html:29
+msgid "Sights"
+msgstr ""
+
+#: wwwroot/Views/Backend/Sights/list.html:2
+msgid "Sights List"
+msgstr ""
+
+#: wwwroot/Views/Backend/Sights/list.html:14
+msgid "delete"
+msgstr ""
+
+#: wwwroot/Views/Backend/Sights/list.html:13
+msgid "edit"
+msgstr ""

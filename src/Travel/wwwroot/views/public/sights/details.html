@@ -1,0 +1,46 @@
+﻿<script type="text/ng-template" id="sightDetailsModal.html">
+	<div class="modal-header">
+		<button type="button" class="close" aria-label="Close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+		<h3 class="modal-title">Крепост Червен</h3>
+	</div>
+	<div class="absolute-modal-body">
+		<div class="modal-body">
+			<div class="container-fluid">
+				<div class="row">
+					<carousel interval="myInterval">
+						<slide ng-repeat="slide in slides" active="slide.active">
+							<img ng-src="{{slide.image}}" style="margin:auto;">
+							<div class="carousel-caption">
+								<h4>Slide {{$index}}</h4>
+								<p>{{slide.text}}</p>
+							</div>
+						</slide>
+					</carousel>
+				</div>
+				<div class="row u-mt15">
+					<div class="col-sm-4 col-md-3">
+						<div><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Иваново, област Русе</div>
+						<div><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Туристическа атракция</div>
+						<div><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Достъп с автомобил</div>
+					</div>
+					<div class="col-sm-8 col-md-9">
+						<p>
+							Крепостта Червен започва своето военно-стратегическо развитие още през Късната античност – VI век от Новата ера. От тази епоха са ни и известни отбранителните съоръжения-кули и стени. Градът е унищожен след варварските нашествия. Населен е през Първото българско царство. Имаме останки от IX-X век. С идването на византийците градът се превръща във важен център. Античните стени са поправени и доразвити. Остава незасегнат от варварските нападения от XI век. Бумът на развитие на града е през XIII –XIV век. Тогава започва разширяването на града извън крепостните съоръжения. Обособяват се две части – цитадела и неукрепена
+						</p>
+						<p>
+							ЦИТАДЕЛАТА – основно жилищни постройки, военни и храмови. Комплексът, който е наречен „Феодалният замък“ най-вероятно е манастирски комплекс. Български градове, които да са във феодален строй, познат в Западна Европа, просто няма. Всички документи, свързани с някакви строителни или други дейности в градовете са по царско нареждане. От изворите знаем за 2 митрополитски църкви в укрепената част. Църква номер четири – стегнат кръст с ктиторски арменски надпис.
+						</p>
+					</div>
+				</div>
+			</div><!-- /.container-fluid -->
+		</div><!-- /.modal-body -->
+	</div>
+</script>
+
+<script type="text/ng-template" id="sightDetailsModalWindow.html">
+	<div modal-render="{{$isRendered}}" tabindex="-1" role="dialog" class="modal"
+		 modal-animation-class="fade"
+		 ng-class="{in: animate}" ng-style="{'z-index': 1050 + index*10, display: 'block'}" ng-click="close($event)">
+		<div class="info-window modal-content" modal-transclude></div>
+	</div>
+</script>

@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: bg\n"
+
+#: wwwroot/backend.html:31
+msgid "Activities"
+msgstr "Дейности"
+
+#: wwwroot/Views/Backend/Sights/list.html:22
+msgid "Add New Sight"
+msgstr "Добави забележителост"
+
+#: wwwroot/backend.html:28
+msgid "Dashboard"
+msgstr "Начално табло"
+
+#: wwwroot/backend.html:30
+msgid "Events"
+msgstr "Събития"
+
+#: wwwroot/backend.html:32
+msgid "Hotels"
+msgstr "Хотели"
+
+#: wwwroot/Views/Backend/Sights/list.html:7
+msgid "Name"
+msgstr "Име"
+
+#: wwwroot/backend.html:29
+msgid "Sights"
+msgstr "Забележителности"
+
+#: wwwroot/Views/Backend/Sights/list.html:2
+msgid "Sights List"
+msgstr "Списък със забележителности"
+
+#: wwwroot/Views/Backend/Sights/list.html:14
+msgid "delete"
+msgstr "изтрии"
+
+#: wwwroot/Views/Backend/Sights/list.html:13
+msgid "edit"
+msgstr "редактирай"

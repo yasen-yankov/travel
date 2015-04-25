@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22609.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5CCDB5E6-3BE0-4C29-A229-E8A713FCCE81}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Travel", "src\Travel\Travel.kproj", "{AE29646C-8C94-4806-AEBE-FDF51D7C2D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08F99052-E8AC-4F92-BE06-3E2BF3D59230}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE29646C-8C94-4806-AEBE-FDF51D7C2D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE29646C-8C94-4806-AEBE-FDF51D7C2D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE29646C-8C94-4806-AEBE-FDF51D7C2D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE29646C-8C94-4806-AEBE-FDF51D7C2D00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE29646C-8C94-4806-AEBE-FDF51D7C2D00} = {5CCDB5E6-3BE0-4C29-A229-E8A713FCCE81}
+	EndGlobalSection
+EndGlobal
