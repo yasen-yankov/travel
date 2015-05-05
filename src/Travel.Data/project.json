@@ -1,0 +1,24 @@
+{
+    "version": "1.0.0-*",
+    "dependencies": {
+        "EntityFramework.Commands": "7.0.0-beta3",
+        "EntityFramework.SqlServer": "7.0.0-beta3"
+    },
+    "commands": {
+        "ef": "EntityFramework.Commands"
+    },
+    "frameworks": {
+        "aspnet50": {
+            "dependencies": {
+            },
+            "frameworkAssemblies": {
+                "System.Data.Entity": "4.0.0.0"
+            }
+        },
+        "aspnetcore50": {
+            "dependencies": {
+                "System.Runtime": "4.0.20-beta-22523"
+            }
+        }
+    }
+}

@@ -92,9 +92,11 @@
         .module('app')
         .controller('mapController', mapController);
 
-    mapController.$inject = ['$scope', '$location', '$routeParams', 'uiGmapGoogleMapApi'];
+    mapController.$inject = ['$scope', '$location', '$routeParams', 'uiGmapGoogleMapApi', 'Sights'];
 
-    function mapController($scope, $location, $routeParams, uiGmapGoogleMapApi) {
+    function mapController($scope, $location, $routeParams, uiGmapGoogleMapApi, Sights) {
+    	$scope.sights = Sights.query();
+
     	var styles = [
 		  {
 		  	"featureType": "administrative.country",
@@ -154,30 +156,36 @@
     			}
     		};
 
-    		var marker = {
-    			id: 1,
-    			latitude: 43.6195287,
-    			longitude: 26.0216849,
-    			title: 'Крепост Червен',
-    			location: 'Иваново, област Русе',
-    			type: 'Туристическа атракция',
-    			accessible: 'Достъп с автомобил',
-    			icon: 'http://lorempixel.com/20/20/',
-    			options: {
-    				labelContent: 'Крепост Червен'
-    			},
-    			infoWindow: {
-    				show: false
-    			}
-    		};
+    		$scope.markers = [];
+    		
+
+    		for (var i = 0; i < $scope.sights.length; i++) {
+    			var marker = {
+    				id: $scope.sights[i].Id,
+    				latitude: $scope.sights[i].Latitude,
+    				longitude: $scope.sights[i].Longitude,
+    				title: $scope.sights[i].Name,
+    				location: 'Иваново, област Русе',
+    				type: 'Туристическа атракция',
+    				accessible: 'Достъп с автомобил',
+    				templateParameter: $scope.sights[i],
+    				partOfUnesco: $scope.sights[i].PartOfUnesco,
+    				icon: 'http://lorempixel.com/20/20/',
+    				options: {
+    					labelContent: $scope.sights[i].Name
+    				},
+    				infoWindow: {
+    					show: false
+    				}
+    			};
+
+    			$scope.markers.push(marker);
+    		}
 
     		$scope.sightId = $routeParams.sightId;
     		if ($scope.sightId) {
     			$scope.map.infoWindow.show = true;
     		}
-
-    		$scope.markers = [];
-    		$scope.markers.push(marker);
     	});
     }
 })();
@@ -213,10 +221,10 @@
         	$scope.addSlide = function () {
         		var newWidth = 1205 + slides.length;
         		slides.push({
-        			image: 'http://placekitten.com/' + newWidth + '/350',
+        			image: 'http://lorempixel.com/' + newWidth + '/350',
         			text: ['More', 'Extra', 'Lots of', 'Surplus'][slides.length % 4] + ' ' +
 					  ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
-        		});
+        		}); 
         	};
 
         	for (var i = 0; i < 4; i++) {
